@@ -1,0 +1,219 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "http://www.ibm.com/dba/projects/PDQDP/CD_vets.json",
+  "title": "PDQDP Document Type Definitions",
+  "lastUpdatDate": "",
+  "lastUpdate": "",
+  "comment": "This is a Doc Type Definition showing some different property types",
+  "baForDeployment": false,
+  "definitions": {
+    "vets": {
+      "$id": "#vets",
+      "title": "vets",
+      "allOf": [
+        {
+          "$ref": "http://www.ibm.com/dba/schemas/#systemDocument"
+        },
+        {
+          "type": "object",
+          "description": "",
+          "baclass": {
+            "caDocTypeId": "5c5bf639-82ac-4ca7-8c9f-b23306023bf8",
+            "defaultRetentionPeriod": "None",
+            "retentionPeriodUnits": ""
+          },
+          "properties": {
+            "VeteransNameLastNameMiddleNameInitial": {
+              "allOf": [
+                {
+                  "$ref": "unmapped"
+                },
+                {
+                  "caKeyClassName": "VeteransNameLastNameMiddleNameInitial",
+                  "caKeyClassId": "7877e77e-2a16-474d-832e-e9d4aaab6e05",
+                  "caValueType": "text"
+                }
+              ]
+            },
+            "DateofBirth": {
+              "allOf": [
+                {
+                  "$ref": "unmapped"
+                },
+                {
+                  "caKeyClassName": "DateofBirth",
+                  "caKeyClassId": "bd90282b-de64-4de4-93eb-4e30f70fe219",
+                  "caValueType": "text"
+                }
+              ]
+            },
+            "CountryOfResidance": {
+              "allOf": [
+                {
+                  "$ref": "unmapped"
+                },
+                {
+                  "caKeyClassName": "CountryOfResidance",
+                  "caKeyClassId": "6e9c0d80-5a74-4f35-ad4b-d2cf49071832",
+                  "caValueType": "text"
+                }
+              ]
+            },
+            "SocialSecurity": {
+              "allOf": [
+                {
+                  "$ref": "unmapped"
+                },
+                {
+                  "caKeyClassName": "SocialSecurity",
+                  "caKeyClassId": "6d981000-1f66-4269-8ca9-0bb6b8c821e2",
+                  "caValueType": "text"
+                }
+              ]
+            },
+            "Address": {
+              "allOf": [
+                {
+                  "$ref": "unmapped"
+                },
+                {
+                  "caKeyClassName": "Address",
+                  "caKeyClassId": "11e0a489-d276-49d2-851e-6e567a0a2fb4",
+                  "caValueType": "text"
+                }
+              ]
+            },
+            "City": {
+              "allOf": [
+                {
+                  "$ref": "unmapped"
+                },
+                {
+                  "caKeyClassName": "City",
+                  "caKeyClassId": "2a454b6f-55f1-4ff8-b051-4736ac4aebdc",
+                  "caValueType": "text"
+                }
+              ]
+            },
+            "ZipCode": {
+              "allOf": [
+                {
+                  "$ref": "unmapped"
+                },
+                {
+                  "caKeyClassName": "ZipCode",
+                  "caKeyClassId": "41014519-c336-40b7-a298-69db71171f1f",
+                  "caValueType": "text"
+                }
+              ]
+            },
+            "TelephoneNo": {
+              "allOf": [
+                {
+                  "$ref": "unmapped"
+                },
+                {
+                  "caKeyClassName": "TelephoneNo",
+                  "caKeyClassId": "24286361-65a9-4366-84ed-1d5cd23f37a7",
+                  "caValueType": "text"
+                }
+              ]
+            },
+            "VetaranDeceased": {
+              "allOf": [
+                {
+                  "$ref": "unmapped"
+                },
+                {
+                  "caKeyClassName": "VetaranDeceased",
+                  "caKeyClassId": "5595f46b-4f8f-43c9-8e83-e2141d505a4f",
+                  "caValueType": "text"
+                }
+              ]
+            },
+            "EmailAddress": {
+              "allOf": [
+                {
+                  "$ref": "unmapped"
+                },
+                {
+                  "caKeyClassName": "EmailAddress",
+                  "caKeyClassId": "f98164a0-4b1c-4fab-a7bf-aaaeba19a0c3",
+                  "caValueType": "text"
+                }
+              ]
+            },
+            "DependentsList": {
+              "allOf": [
+                {
+                  "$ref": "unmapped"
+                },
+                {
+                  "caKeyClassName": "DependentsList",
+                  "caKeyClassId": "1f655d20-b728-4cb8-aae1-5c9f53ae99b6",
+                  "caValueType": "table",
+                  "caComplexKeyMapping": {
+                    "Main": {
+                      "caKeyClassName": "Main",
+                      "caKeyClassId": "b5f1c27f-805e-4114-8574-0fc240c32e02",
+                      "caComplexKeyMapping": {
+                        "Age": {
+                          "caKeyClassName": "Age",
+                          "caKeyClassId": "6b711c9d-6c0c-45b9-9110-d37157acc0ed"
+                        },
+                        "DependentsList": {
+                          "caKeyClassName": "DependentsList",
+                          "caKeyClassId": "1e0b2479-d186-4be2-af52-a2daed0b0461"
+                        },
+                        "Name": {
+                          "caKeyClassName": "Name",
+                          "caKeyClassId": "28429809-a7e5-47f0-9b42-23f1bc3eeddc"
+                        },
+                        "Relationship": {
+                          "caKeyClassName": "Relationship",
+                          "caKeyClassId": "5b0cdb0f-a2b4-450d-94bd-37401d446b89"
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            "AssistanceType": {
+              "allOf": [
+                {
+                  "$ref": "unmapped"
+                },
+                {
+                  "caKeyClassName": "AssistanceType",
+                  "caKeyClassId": "efbb1c75-62ea-46ad-8c16-5f97a1a2c5f1",
+                  "caValueType": "table",
+                  "caComplexKeyMapping": {
+                    "Main": {
+                      "caKeyClassName": "Main",
+                      "caKeyClassId": "62a44ea2-1734-40e2-a734-5bebbebfc074",
+                      "caComplexKeyMapping": {
+                        "a": {
+                          "caKeyClassName": "a",
+                          "caKeyClassId": "043ee755-0a6f-4401-a7a2-51a5e94a9f90"
+                        },
+                        "b": {
+                          "caKeyClassName": "b",
+                          "caKeyClassId": "7fd743cc-7085-4aa6-b9c0-c52bdb49ba68"
+                        },
+                        "c": {
+                          "caKeyClassName": "c",
+                          "caKeyClassId": "9a240a39-3f2a-4daa-be4a-c07f2af30f9e"
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

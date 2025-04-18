@@ -1,0 +1,219 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "http://www.ibm.com/dba/projects/PDQDP/CD_pdq.json",
+  "title": "PDQDP Document Type Definitions",
+  "lastUpdatDate": "",
+  "lastUpdate": "",
+  "comment": "This is a Doc Type Definition showing some different property types",
+  "baForDeployment": false,
+  "definitions": {
+    "pdq": {
+      "$id": "#pdq",
+      "title": "pdq",
+      "allOf": [
+        {
+          "$ref": "http://www.ibm.com/dba/schemas/#systemDocument"
+        },
+        {
+          "type": "object",
+          "description": "",
+          "baclass": {
+            "caDocTypeId": "b80273ed-603f-4242-aeb3-44e1fe766bf2",
+            "defaultRetentionPeriod": "None",
+            "retentionPeriodUnits": ""
+          },
+          "properties": {
+            "EmployeeName": {
+              "allOf": [
+                {
+                  "$ref": "unmapped"
+                },
+                {
+                  "caKeyClassName": "EmployeeName",
+                  "caKeyClassId": "4946e6d5-f981-4052-aace-3a7ae994b01d",
+                  "caValueType": "text"
+                }
+              ]
+            },
+            "EmployeeDepartment": {
+              "allOf": [
+                {
+                  "$ref": "unmapped"
+                },
+                {
+                  "caKeyClassName": "EmployeeDepartment",
+                  "caKeyClassId": "e1592d0e-a193-4034-9d12-b007f200c257",
+                  "caValueType": "text"
+                }
+              ]
+            },
+            "EmployeeDivision": {
+              "allOf": [
+                {
+                  "$ref": "unmapped"
+                },
+                {
+                  "caKeyClassName": "EmployeeDivision",
+                  "caKeyClassId": "0ef502c6-4939-41cf-b580-dcdf17faaf87",
+                  "caValueType": "text"
+                }
+              ]
+            },
+            "SupervisorName": {
+              "allOf": [
+                {
+                  "$ref": "unmapped"
+                },
+                {
+                  "caKeyClassName": "SupervisorName",
+                  "caKeyClassId": "37ebc510-ce21-432a-9062-2dc82a895aa9",
+                  "caValueType": "text"
+                }
+              ]
+            },
+            "SupervisorTitle": {
+              "allOf": [
+                {
+                  "$ref": "unmapped"
+                },
+                {
+                  "caKeyClassName": "SupervisorTitle",
+                  "caKeyClassId": "4a287436-15d8-4ec5-adb7-6bcc8d6e66b2",
+                  "caValueType": "text"
+                }
+              ]
+            },
+            "CurrentJobClassification": {
+              "allOf": [
+                {
+                  "$ref": "unmapped"
+                },
+                {
+                  "caKeyClassName": "CurrentJobClassification",
+                  "caKeyClassId": "24ec324c-e3e9-4e20-b6dc-3561a768b7dc",
+                  "caValueType": "text"
+                }
+              ]
+            },
+            "ProposedJobClassification": {
+              "allOf": [
+                {
+                  "$ref": "unmapped"
+                },
+                {
+                  "caKeyClassName": "ProposedJobClassification",
+                  "caKeyClassId": "5d476a12-cdc6-4878-98d7-6c95396f6433",
+                  "caValueType": "text"
+                }
+              ]
+            },
+            "PositionChanges": {
+              "allOf": [
+                {
+                  "$ref": "unmapped"
+                },
+                {
+                  "caKeyClassName": "PositionChanges",
+                  "caKeyClassId": "00c91b0f-7569-4497-a0bc-67c36d8e74ea",
+                  "caValueType": "text"
+                }
+              ]
+            },
+            "Date": {
+              "allOf": [
+                {
+                  "$ref": "unmapped"
+                },
+                {
+                  "caKeyClassName": "Date",
+                  "caKeyClassId": "2a77515f-3fed-437b-a49e-044ceecad77a",
+                  "caValueType": "text"
+                }
+              ]
+            },
+            "FormName": {
+              "allOf": [
+                {
+                  "$ref": "unmapped"
+                },
+                {
+                  "caKeyClassName": "FormName",
+                  "caKeyClassId": "14c45a82-09ba-4621-8191-ee55a59f8021",
+                  "caValueType": "text"
+                }
+              ]
+            },
+            "PositionPurpose": {
+              "allOf": [
+                {
+                  "$ref": "unmapped"
+                },
+                {
+                  "caKeyClassName": "PositionPurpose",
+                  "caKeyClassId": "387b2601-0599-4f80-8ae0-57b6775790d0",
+                  "caValueType": "text"
+                }
+              ]
+            },
+            "PositionTasks": {
+              "allOf": [
+                {
+                  "$ref": "unmapped"
+                },
+                {
+                  "caKeyClassName": "PositionTasks",
+                  "caKeyClassId": "22fa8d8a-de86-4307-96f8-9105bcafeaf9",
+                  "caValueType": "table",
+                  "caComplexKeyMapping": {
+                    "Main": {
+                      "caKeyClassName": "Main",
+                      "caKeyClassId": "bccd0583-3c26-4cb6-89ca-210cfce10543",
+                      "caComplexKeyMapping": {
+                        "Time": {
+                          "caKeyClassName": "Time",
+                          "caKeyClassId": "f6211e01-6ab5-4dc7-b241-523e45ae0b6c"
+                        },
+                        "TaskDescription": {
+                          "caKeyClassName": "TaskDescription",
+                          "caKeyClassId": "327c5ff5-39ba-4beb-bb27-eac283761e5e"
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            "InternalandExternalContacts": {
+              "allOf": [
+                {
+                  "$ref": "unmapped"
+                },
+                {
+                  "caKeyClassName": "InternalandExternalContacts",
+                  "caKeyClassId": "f6d2224b-3a46-4e2a-b646-de81980a568d",
+                  "caValueType": "table",
+                  "caComplexKeyMapping": {
+                    "Main": {
+                      "caKeyClassName": "Main",
+                      "caKeyClassId": "f21a2059-f8b3-4730-a4f9-61d3532ab594",
+                      "caComplexKeyMapping": {
+                        "TitleandPosition": {
+                          "caKeyClassName": "TitleandPosition",
+                          "caKeyClassId": "761e0d79-3cf6-4005-a6a3-5bf245d844e9"
+                        },
+                        "Purpose": {
+                          "caKeyClassName": "Purpose",
+                          "caKeyClassId": "c0fe378a-62c6-4857-8fb8-a3a5a889ad74"
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

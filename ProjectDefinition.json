@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "http://www.ibm.com/dba/solutions/solution1/PDQDP/ProjectDefinition.json",
+  "title": "PDQ_Doc_Processing",
+  "ba_description": "",
+  "ba_type": "content",
+  "ba_repoPrimaryKey": "PDQDP",
+  "ba_expectedDocTypes": 0,
+  "ba_id": "16b07f34-4285-4eb6-ac5b-b5c7f0f1bd5c",
+  "ba_dataDefinitions": [],
+  "ba_contentDefinitions": [
+    {
+      "$ref": "CD_UtilityBill.json",
+      "title": "Utility Bill",
+      "caDocTypeId": "a2827178-33da-403b-aaa8-b0bb3b820959"
+    },
+    {
+      "$ref": "CD_BillOfLading.json",
+      "title": "Bill of Lading",
+      "caDocTypeId": "63842cbd-c858-4a5d-955c-7825edb7da25"
+    },
+    {
+      "$ref": "CD_Invoice.json",
+      "title": "Invoice",
+      "caDocTypeId": "b65d6596-71e0-4def-92e4-fc5e04ff4e66"
+    },
+    {
+      "$ref": "CD_pdq.json",
+      "title": "pdq",
+      "caDocTypeId": "b80273ed-603f-4242-aeb3-44e1fe766bf2"
+    },
+    {
+      "$ref": "CD_vets.json",
+      "title": "vets",
+      "caDocTypeId": "5c5bf639-82ac-4ca7-8c9f-b23306023bf8"
+    }
+  ],
+  "ba_caDefinitions": "",
+  "ba_caProjectDescriptor": "a0f13ed2-0723-4b54-bea8-5182f0b55edc",
+  "ba_snapshotName": "",
+  "ba_versionId": ""
+}
