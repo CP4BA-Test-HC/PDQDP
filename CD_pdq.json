@@ -155,34 +155,6 @@
                 }
               ]
             },
-            "PositionTasks": {
-              "allOf": [
-                {
-                  "$ref": "unmapped"
-                },
-                {
-                  "caKeyClassName": "PositionTasks",
-                  "caKeyClassId": "22fa8d8a-de86-4307-96f8-9105bcafeaf9",
-                  "caValueType": "table",
-                  "caComplexKeyMapping": {
-                    "Main": {
-                      "caKeyClassName": "Main",
-                      "caKeyClassId": "bccd0583-3c26-4cb6-89ca-210cfce10543",
-                      "caComplexKeyMapping": {
-                        "Time": {
-                          "caKeyClassName": "Time",
-                          "caKeyClassId": "f6211e01-6ab5-4dc7-b241-523e45ae0b6c"
-                        },
-                        "TaskDescription": {
-                          "caKeyClassName": "TaskDescription",
-                          "caKeyClassId": "327c5ff5-39ba-4beb-bb27-eac283761e5e"
-                        }
-                      }
-                    }
-                  }
-                }
-              ]
-            },
             "InternalandExternalContacts": {
               "allOf": [
                 {
