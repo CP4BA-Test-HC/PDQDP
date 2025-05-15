@@ -5,9 +5,58 @@
   "ba_description": "",
   "ba_type": "content",
   "ba_repoPrimaryKey": "PDQDP",
-  "ba_expectedDocTypes": 0,
   "ba_id": "16b07f34-4285-4eb6-ac5b-b5c7f0f1bd5c",
-  "ba_dataDefinitions": [],
+  "ba_expectedDocTypes": 0,
+  "ba_dataDefinitions": [
+    {
+      "$ref": "proj://CDD/DD_0a76d1ec-d39a-4fd4-bc8e-939fd3f0e0f9_EmployeeName.json",
+      "title": "Employee Name"
+    },
+    {
+      "$ref": "proj://CDD/DD_aa820758-3cb7-43d6-9a08-26a8f31b4f20_EmployeeDepartment.json",
+      "title": "Employee Department"
+    },
+    {
+      "$ref": "proj://CDD/DD_ea6f564d-3283-44ba-8078-f250fb7fef0e_EmployeeDivision.json",
+      "title": "Employee Division"
+    },
+    {
+      "$ref": "proj://CDD/DD_f449d3b9-5f53-4cae-927f-793c9b4a1300_SupervisorName.json",
+      "title": "Supervisor Name"
+    },
+    {
+      "$ref": "proj://CDD/DD_1da65477-f00a-46c7-b183-44d859e03c5e_SupervisorTitle.json",
+      "title": "Supervisor Title"
+    },
+    {
+      "$ref": "proj://CDD/DD_731090d6-9880-4a18-b467-85cf59575783_CurrentJobClassification.json",
+      "title": "Current Job Classification"
+    },
+    {
+      "$ref": "proj://CDD/DD_d035e9d0-1bb0-48b6-9b00-9757ac144d32_ProposedJobClassification.json",
+      "title": "Proposed Job Classification"
+    },
+    {
+      "$ref": "proj://CDD/DD_dfe0f985-5c66-49e5-b505-59120f13cedf_PositionChanges.json",
+      "title": "Position Changes"
+    },
+    {
+      "$ref": "proj://CDD/DD_51645086-ccfd-4933-88e4-4d1e79e94883_Date.json",
+      "title": "Date"
+    },
+    {
+      "$ref": "proj://CDD/DD_d10423b5-7c01-4563-a60c-b873bf7dd265_PositionPurpose.json",
+      "title": "Position Purpose"
+    },
+    {
+      "$ref": "proj://CDD/DD_17558ab7-7b4b-437c-93ec-07a049102b69_FormName.json",
+      "title": "FormName"
+    },
+    {
+      "$ref": "proj://CDD/DD_d0815d9f-1de9-469a-8e9d-e488cde5ff7f_Date.json",
+      "title": "Date"
+    }
+  ],
   "ba_contentDefinitions": [
     {
       "$ref": "CD_UtilityBill.json",
@@ -37,13 +86,11 @@
   ],
   "ba_caDefinitions": "caDefinitions.json",
   "ba_caProjectDescriptor": "a0f13ed2-0723-4b54-bea8-5182f0b55edc",
-  "ba_snapshotName": "v1-2025-04-25-2100",
-  "ba_versionId": "c7001408-cbe1-4f9a-8f03-b0ecb9f996e9",
   "ba_caMLModel": "MLmodel.zip",
-  "ba_versionNotes": "Testing Removing Annotations",
+  "ba_snapshotName": "v2-2025-05-15-2031",
+  "ba_versionNotes": "",
+  "ba_versionId": "99f7e9de-9a5f-4f1b-980a-30937eff085a",
+  "ba_deploy_repo_id": "BAWTOS",
   "ba_caClassificationModelTrainingId": "e7a033e0-6499-49ea-895f-c4b2106c0425",
-  "ba_caDataExtractionModelTrainingId": "24d96c9b-917d-471e-8491-55c6004f1917",
-  "ba_caDeployedClassificationModelTrainingId": "e7a033e0-6499-49ea-895f-c4b2106c0425",
-  "ba_caDeployedDataExtractionModelTrainingId": "24d96c9b-917d-471e-8491-55c6004f1917",
-  "ba_deploy_repo_id": "BAWTOS"
+  "ba_caDataExtractionModelTrainingId": "24d96c9b-917d-471e-8491-55c6004f1917"
 }

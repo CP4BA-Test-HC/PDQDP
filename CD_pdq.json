@@ -1,191 +1,235 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$id": "http://www.ibm.com/dba/projects/PDQDP/CD_pdq.json",
-  "title": "PDQDP Document Type Definitions",
-  "lastUpdatDate": "",
-  "lastUpdate": "",
-  "comment": "This is a Doc Type Definition showing some different property types",
-  "baForDeployment": false,
-  "definitions": {
-    "pdq": {
-      "$id": "#pdq",
-      "title": "pdq",
-      "allOf": [
-        {
-          "$ref": "http://www.ibm.com/dba/schemas/#systemDocument"
-        },
-        {
-          "type": "object",
-          "description": "",
-          "baclass": {
-            "caDocTypeId": "b80273ed-603f-4242-aeb3-44e1fe766bf2",
-            "defaultRetentionPeriod": "None",
-            "retentionPeriodUnits": ""
-          },
-          "properties": {
-            "EmployeeName": {
-              "allOf": [
+    "$schema": "http://json-schema.org/schema#",
+    "$id": "http://www.ibm.com/dba/projects/PDQDP/CD_pdq.json",
+    "title": "PDQDP Document Type Definitions",
+    "lastUpdatDate": "",
+    "lastUpdate": "",
+    "comment": "This is a Doc Type Definition showing some different property types",
+    "baForDeployment": true,
+    "definitions": {
+        "pdq": {
+            "$id": "#pdq",
+            "title": "pdq",
+            "allOf": [
                 {
-                  "$ref": "unmapped"
+                    "$ref": "http://www.ibm.com/dba/schemas/#systemDocument"
                 },
                 {
-                  "caKeyClassName": "EmployeeName",
-                  "caKeyClassId": "4946e6d5-f981-4052-aace-3a7ae994b01d",
-                  "caValueType": "text"
-                }
-              ]
-            },
-            "EmployeeDepartment": {
-              "allOf": [
-                {
-                  "$ref": "unmapped"
-                },
-                {
-                  "caKeyClassName": "EmployeeDepartment",
-                  "caKeyClassId": "e1592d0e-a193-4034-9d12-b007f200c257",
-                  "caValueType": "text"
-                }
-              ]
-            },
-            "EmployeeDivision": {
-              "allOf": [
-                {
-                  "$ref": "unmapped"
-                },
-                {
-                  "caKeyClassName": "EmployeeDivision",
-                  "caKeyClassId": "0ef502c6-4939-41cf-b580-dcdf17faaf87",
-                  "caValueType": "text"
-                }
-              ]
-            },
-            "SupervisorName": {
-              "allOf": [
-                {
-                  "$ref": "unmapped"
-                },
-                {
-                  "caKeyClassName": "SupervisorName",
-                  "caKeyClassId": "37ebc510-ce21-432a-9062-2dc82a895aa9",
-                  "caValueType": "text"
-                }
-              ]
-            },
-            "SupervisorTitle": {
-              "allOf": [
-                {
-                  "$ref": "unmapped"
-                },
-                {
-                  "caKeyClassName": "SupervisorTitle",
-                  "caKeyClassId": "4a287436-15d8-4ec5-adb7-6bcc8d6e66b2",
-                  "caValueType": "text"
-                }
-              ]
-            },
-            "CurrentJobClassification": {
-              "allOf": [
-                {
-                  "$ref": "unmapped"
-                },
-                {
-                  "caKeyClassName": "CurrentJobClassification",
-                  "caKeyClassId": "24ec324c-e3e9-4e20-b6dc-3561a768b7dc",
-                  "caValueType": "text"
-                }
-              ]
-            },
-            "ProposedJobClassification": {
-              "allOf": [
-                {
-                  "$ref": "unmapped"
-                },
-                {
-                  "caKeyClassName": "ProposedJobClassification",
-                  "caKeyClassId": "5d476a12-cdc6-4878-98d7-6c95396f6433",
-                  "caValueType": "text"
-                }
-              ]
-            },
-            "PositionChanges": {
-              "allOf": [
-                {
-                  "$ref": "unmapped"
-                },
-                {
-                  "caKeyClassName": "PositionChanges",
-                  "caKeyClassId": "00c91b0f-7569-4497-a0bc-67c36d8e74ea",
-                  "caValueType": "text"
-                }
-              ]
-            },
-            "Date": {
-              "allOf": [
-                {
-                  "$ref": "unmapped"
-                },
-                {
-                  "caKeyClassName": "Date",
-                  "caKeyClassId": "2a77515f-3fed-437b-a49e-044ceecad77a",
-                  "caValueType": "text"
-                }
-              ]
-            },
-            "FormName": {
-              "allOf": [
-                {
-                  "$ref": "unmapped"
-                },
-                {
-                  "caKeyClassName": "FormName",
-                  "caKeyClassId": "14c45a82-09ba-4621-8191-ee55a59f8021",
-                  "caValueType": "text"
-                }
-              ]
-            },
-            "PositionPurpose": {
-              "allOf": [
-                {
-                  "$ref": "unmapped"
-                },
-                {
-                  "caKeyClassName": "PositionPurpose",
-                  "caKeyClassId": "387b2601-0599-4f80-8ae0-57b6775790d0",
-                  "caValueType": "text"
-                }
-              ]
-            },
-            "InternalandExternalContacts": {
-              "allOf": [
-                {
-                  "$ref": "unmapped"
-                },
-                {
-                  "caKeyClassName": "InternalandExternalContacts",
-                  "caKeyClassId": "f6d2224b-3a46-4e2a-b646-de81980a568d",
-                  "caValueType": "table",
-                  "caComplexKeyMapping": {
-                    "Main": {
-                      "caKeyClassName": "Main",
-                      "caKeyClassId": "f21a2059-f8b3-4730-a4f9-61d3532ab594",
-                      "caComplexKeyMapping": {
-                        "TitleandPosition": {
-                          "caKeyClassName": "TitleandPosition",
-                          "caKeyClassId": "761e0d79-3cf6-4005-a6a3-5bf245d844e9"
+                    "type": "object",
+                    "description": "",
+                    "baclass": {
+                        "caDocTypeId": "b80273ed-603f-4242-aeb3-44e1fe766bf2",
+                        "defaultRetentionPeriod": "None",
+                        "retentionPeriodUnits": ""
+                    },
+                    "properties": {
+                        "EmployeeName": {
+                            "allOf": [
+                                {
+                                    "$ref": "proj://CDD/DD_0a76d1ec-d39a-4fd4-bc8e-939fd3f0e0f9_EmployeeName.json#EmployeeName"
+                                },
+                                {
+                                    "caKeyClassName": "EmployeeName",
+                                    "caKeyClassId": "4946e6d5-f981-4052-aace-3a7ae994b01d",
+                                    "caValueType": "text",
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                }
+                            ]
                         },
-                        "Purpose": {
-                          "caKeyClassName": "Purpose",
-                          "caKeyClassId": "c0fe378a-62c6-4857-8fb8-a3a5a889ad74"
+                        "EmployeeDepartment": {
+                            "allOf": [
+                                {
+                                    "$ref": "proj://CDD/DD_aa820758-3cb7-43d6-9a08-26a8f31b4f20_EmployeeDepartment.json#EmployeeDepartment"
+                                },
+                                {
+                                    "caKeyClassName": "EmployeeDepartment",
+                                    "caKeyClassId": "e1592d0e-a193-4034-9d12-b007f200c257",
+                                    "caValueType": "text",
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                }
+                            ]
+                        },
+                        "EmployeeDivision": {
+                            "allOf": [
+                                {
+                                    "$ref": "proj://CDD/DD_ea6f564d-3283-44ba-8078-f250fb7fef0e_EmployeeDivision.json#EmployeeDivision"
+                                },
+                                {
+                                    "caKeyClassName": "EmployeeDivision",
+                                    "caKeyClassId": "0ef502c6-4939-41cf-b580-dcdf17faaf87",
+                                    "caValueType": "text",
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                }
+                            ]
+                        },
+                        "SupervisorName": {
+                            "allOf": [
+                                {
+                                    "$ref": "proj://CDD/DD_f449d3b9-5f53-4cae-927f-793c9b4a1300_SupervisorName.json#SupervisorName"
+                                },
+                                {
+                                    "caKeyClassName": "SupervisorName",
+                                    "caKeyClassId": "37ebc510-ce21-432a-9062-2dc82a895aa9",
+                                    "caValueType": "text",
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                }
+                            ]
+                        },
+                        "SupervisorTitle": {
+                            "allOf": [
+                                {
+                                    "$ref": "proj://CDD/DD_1da65477-f00a-46c7-b183-44d859e03c5e_SupervisorTitle.json#SupervisorTitle"
+                                },
+                                {
+                                    "caKeyClassName": "SupervisorTitle",
+                                    "caKeyClassId": "4a287436-15d8-4ec5-adb7-6bcc8d6e66b2",
+                                    "caValueType": "text",
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                }
+                            ]
+                        },
+                        "CurrentJobClassification": {
+                            "allOf": [
+                                {
+                                    "$ref": "proj://CDD/DD_731090d6-9880-4a18-b467-85cf59575783_CurrentJobClassification.json#CurrentJobClassification"
+                                },
+                                {
+                                    "caKeyClassName": "CurrentJobClassification",
+                                    "caKeyClassId": "24ec324c-e3e9-4e20-b6dc-3561a768b7dc",
+                                    "caValueType": "text",
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                }
+                            ]
+                        },
+                        "ProposedJobClassification": {
+                            "allOf": [
+                                {
+                                    "$ref": "proj://CDD/DD_d035e9d0-1bb0-48b6-9b00-9757ac144d32_ProposedJobClassification.json#ProposedJobClassification"
+                                },
+                                {
+                                    "caKeyClassName": "ProposedJobClassification",
+                                    "caKeyClassId": "5d476a12-cdc6-4878-98d7-6c95396f6433",
+                                    "caValueType": "text",
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                }
+                            ]
+                        },
+                        "PositionChanges": {
+                            "allOf": [
+                                {
+                                    "$ref": "proj://CDD/DD_dfe0f985-5c66-49e5-b505-59120f13cedf_PositionChanges.json#PositionChanges"
+                                },
+                                {
+                                    "caKeyClassName": "PositionChanges",
+                                    "caKeyClassId": "00c91b0f-7569-4497-a0bc-67c36d8e74ea",
+                                    "caValueType": "text",
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                }
+                            ]
+                        },
+                        "Date": {
+                            "allOf": [
+                                {
+                                    "$ref": "proj://CDD/DD_d0815d9f-1de9-469a-8e9d-e488cde5ff7f_Date.json#Date"
+                                },
+                                {
+                                    "caKeyClassName": "Date",
+                                    "caKeyClassId": "2a77515f-3fed-437b-a49e-044ceecad77a",
+                                    "caValueType": "text",
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                }
+                            ]
+                        },
+                        "FormName": {
+                            "allOf": [
+                                {
+                                    "$ref": "proj://CDD/DD_17558ab7-7b4b-437c-93ec-07a049102b69_FormName.json#FormName"
+                                },
+                                {
+                                    "caKeyClassName": "FormName",
+                                    "caKeyClassId": "14c45a82-09ba-4621-8191-ee55a59f8021",
+                                    "caValueType": "text",
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                }
+                            ]
+                        },
+                        "PositionPurpose": {
+                            "allOf": [
+                                {
+                                    "$ref": "proj://CDD/DD_d10423b5-7c01-4563-a60c-b873bf7dd265_PositionPurpose.json#PositionPurpose"
+                                },
+                                {
+                                    "caKeyClassName": "PositionPurpose",
+                                    "caKeyClassId": "387b2601-0599-4f80-8ae0-57b6775790d0",
+                                    "caValueType": "text",
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                }
+                            ]
+                        },
+                        "InternalandExternalContacts": {
+                            "allOf": [
+                                {
+                                    "$ref": "unmapped"
+                                },
+                                {
+                                    "caKeyClassName": "InternalandExternalContacts",
+                                    "caKeyClassId": "f6d2224b-3a46-4e2a-b646-de81980a568d",
+                                    "caValueType": "table",
+                                    "caComplexKeyMapping": {
+                                        "Main": {
+                                            "caKeyClassName": "Main",
+                                            "caKeyClassId": "f21a2059-f8b3-4730-a4f9-61d3532ab594",
+                                            "caComplexKeyMapping": {
+                                                "TitleandPosition": {
+                                                    "caKeyClassName": "TitleandPosition",
+                                                    "caKeyClassId": "761e0d79-3cf6-4005-a6a3-5bf245d844e9"
+                                                },
+                                                "Purpose": {
+                                                    "caKeyClassName": "Purpose",
+                                                    "caKeyClassId": "c0fe378a-62c6-4857-8fb8-a3a5a889ad74"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
                         }
-                      }
                     }
-                  }
                 }
-              ]
-            }
-          }
+            ]
         }
-      ]
     }
-  }
 }
