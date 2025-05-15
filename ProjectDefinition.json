@@ -92,5 +92,7 @@
   "ba_versionId": "99f7e9de-9a5f-4f1b-980a-30937eff085a",
   "ba_deploy_repo_id": "BAWTOS",
   "ba_caClassificationModelTrainingId": "e7a033e0-6499-49ea-895f-c4b2106c0425",
-  "ba_caDataExtractionModelTrainingId": "24d96c9b-917d-471e-8491-55c6004f1917"
+  "ba_caDataExtractionModelTrainingId": "24d96c9b-917d-471e-8491-55c6004f1917",
+  "ba_caDeployedClassificationModelTrainingId": "e7a033e0-6499-49ea-895f-c4b2106c0425",
+  "ba_caDeployedDataExtractionModelTrainingId": "24d96c9b-917d-471e-8491-55c6004f1917"
 }
